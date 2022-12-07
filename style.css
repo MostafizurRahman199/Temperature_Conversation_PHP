@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+h1 {
+    text-align: center;
+    line-height: 20vh;
+    color: blueviolet;
+}
+
+.main {
+    width: 800px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left img {
+    max-width: 400px;
+    height: auto;
+}
