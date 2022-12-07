@@ -35,35 +35,39 @@ h1 {
 </style>
     </title>
 </head>
-    <body>
-         <h1 style="color:blue; text-align:center; color:orangered">Temperature Conversation</h1>
-            <div class="main" style=" width: 800px;
-    height: 400px;
+    <body style=" background-image: url(weather.png) ;
+    repeat:no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% 100%;">
+         <h1 style="color:blue; text-align:center; color:orangered ;font-family: cursive;">Temperature Conversation</h1>
+            <div class="main" style=" width: 900px;
+    height: 600px;
     display: flex;
-    justify-content: space-between;
     grid-gap:100px;
-    align-items: center;">
+    justify-content: space-between;
+    align-items: center;
+    margin-left:200px;
+   
+   ">
                 <div class="left">
                 <img style=" max-width: 600px;
     height: auto;" src="wheater.webp" alt="">
                 </div>
-                <div style=" padding :80px; border-radius: 10px;  background-image: url(weather.png);
-    background-position: 50% 50%;
-    background-size: 700px 400px;
+                <div style=" padding :80px; border-radius: 10px;  
                 ; text-align: center;" class="right">
                 <form action="" method="POST">
-                    <input style="width: 250px; height:40px; padding: 5px; outline: none; border:1px solid orangered; border-radius:5px; text-align: center;" type="text" name="num" placeholder="Enter Temperature">
+                    <input style="width: 250px; height:40px; padding: 5px; outline: none; border:1px solid orangered; border-radius:5px; text-align: center; font-family: cursive;"" type="text" name="num" placeholder="Enter Temperature">
                     <div style="width: 100%; margin:20px 0; " class="selection">
-                        <label style="color:orangered" for="">Celc</label>
-                        <input style="color:orangered;" type="radio" name="unit" value="cel">
+                        <label style="font-family: cursive;color:orangered" for="">Celc</label>
+                        <input style="color:orangered;font-family: cursive;" type="radio" name="unit" value="cel">
                         <label style="color:orangered" for="">Ferhen</label>
-                        <input style="color:orangered;" type="radio" name="unit" value="fer">
+                        <input style="color:orangered;font-family: cursive;" type="radio" name="unit" value="fer">
                     </div>
 
-                    <input style="background-color: orangered; width: 100px; height:30px; border-radius: 5px; border:none; color:white;" type="submit" name="submit" value="Conver Now">
+                    <input style="background-color: orangered; width: 100px; height:30px; border-radius: 5px; border:none; color:white;font-family: cursive;" type="submit" name="submit" value="Conver Now">
                 </form>
                 <div>
-                    <p style="font-size: larger; color:orangered">
+                    <p style="font-size: larger; color:orangered;font-family: cursive;">
                         <?php
                         if(isset($_POST['submit'] ) && isset($_POST['unit'])){
                             $num = $_POST['num'];
